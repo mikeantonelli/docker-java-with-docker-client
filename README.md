@@ -1,3 +1,29 @@
 # docker-java-with-docker-client
 
 A Docker image with Java and Docker client
+
+## Build
+
+```
+➭ docker build -t mikeantonelli/docker-java-with-docker-client:17.05.0 .
+...
+Successfully built ...
+Successfully tagged mikeantonelli/docker-java-with-docker-client:17.05.0
+```
+
+## Verify
+
+```
+➭ docker run -it mikeantonelli/docker-java-with-docker-client:17.05.0 /bin/bash
+root@...:/# docker --version
+Docker version 17.05.0-ce, build 89658be
+```
+
+## Publish
+
+```
+➭ docker push mikeantonelli/docker-java-with-docker-client:17.05.0
+The push refers to a repository [docker.io/mikeantonelli/docker-java-with-docker-client]
+...
+17.05.0: digest: sha256:c73e2149893fbb41c51cce0933805da940fdc4098ed891f9f17c59475e9d8807 size: 2418
+```
