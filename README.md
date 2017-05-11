@@ -14,7 +14,7 @@ Successfully tagged mikeantonelli/docker-java-with-docker-client:17.05.0
 ## Verify
 
 ```
-➭ docker run -it mikeantonelli/docker-java-with-docker-client:17.05.0 /bin/bash
+➭ docker run -it -v /var/run/docker.sock:/var/run/docker.sock mikeantonelli/docker-java-with-docker-client:17.05.0 /bin/bash
 root@...:/# docker --version
 Docker version 17.05.0-ce, build 89658be
 ```
