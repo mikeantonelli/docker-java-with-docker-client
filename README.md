@@ -1,4 +1,4 @@
-# docker-java-with-docker-client
+# docker-java-with-docker-compose
 
 A Docker image with Java, Docker client, and Docker Compose.
 
